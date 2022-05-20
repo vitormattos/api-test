@@ -11,17 +11,20 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6",
         "vimeo/psalm": "^4.23",
-        "phpstan/phpstan": "^1.6"
+        "phpstan/phpstan": "^1.6",
+        "phpunit/phpunit": "^9.5"
     },
     "scripts" : {
         "phpcs" : "phpcs",
         "phpcbf" : "phpcbf",
         "psalm" : "psalm",
         "phpstan" : "phpstan analyse src --level 5",
+        "phpunit": "vendor/bin/phpunit --color tests",
         "test" : [
             "@phpcs",
             "@psalm",
-            "@phpstan"
+            "@phpstan",
+            "@phpunit"
         ]
     }
 }
