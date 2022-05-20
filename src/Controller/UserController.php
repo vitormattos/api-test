@@ -9,7 +9,8 @@ use Slim\Routing\RouteContext;
 class UserController
 {
     private string $database;
-    public function __construct() {
+    public function __construct()
+    {
         $this->database = __DIR__ . '/../../storage/database.json';
     }
     public function retrieve(Request $request, Response $response): Response
