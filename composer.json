@@ -7,5 +7,15 @@
         "psr-4": {
             "Api\\": "src"
         }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "scripts" : {
+        "phpcs" : "phpcs",
+        "phpcbf" : "phpcbf",
+        "test" : [
+            "@phpcs"
+        ]
     }
 }
