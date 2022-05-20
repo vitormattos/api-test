@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .docker/api
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www
+      - ~/.composer:/home/composer/
+    environment:
+      - XDEBUG_CONFIG
