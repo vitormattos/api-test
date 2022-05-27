@@ -45,7 +45,7 @@ paths:
                 description: Files associated with account
                 items:
                   $ref: '#/components/schemas/User'
-        '404':
+        '204':
           description: Empty database
       operationId: get-users-userId
       description: Retrieve all users
@@ -53,7 +53,7 @@ paths:
       summary: Create New User
       operationId: post-user
       responses:
-        '200':
+        '201':
           description: User Created
           content:
             application/json:

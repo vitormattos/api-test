@@ -5,7 +5,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Api\\": "src"
+            "Api\\": "src",
+            "Tests\\": "tests"
         }
     },
     "require-dev": {
@@ -15,7 +16,8 @@
         "phpunit/phpunit": "^9.5",
         "behat/behat": "^3.10",
         "libresign/behat-builtin-extension": "^0.4.1",
-        "guzzlehttp/guzzle": "^7.4"
+        "guzzlehttp/guzzle": "^7.4",
+        "byjg/swagger-test": "^3.1"
     },
     "scripts" : {
         "phpcs" : "phpcs",

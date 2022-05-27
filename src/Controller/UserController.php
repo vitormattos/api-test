@@ -17,10 +17,15 @@ class UserController
     {
         $database = $this->getDatabase();
 
+        if (!$database) {
+            return $response
+                ->withHeader('Content-Type', 'application/json')
+                ->withStatus(204);
+        }
         $response->getBody()->write(json_encode($database));
         return $response
             ->withHeader('Content-Type', 'application/json')
-            ->withStatus(201);
+            ->withStatus(200);
     }
 
     public function create(Request $request, Response $response): Response
@@ -29,9 +34,7 @@ class UserController
 
         $requestData = $request->getParsedBody();
         if (!array_key_exists($requestData['id'], $database)) {
-            $database[$requestData['id']] = [
-                'name' => $requestData['name']
-            ];
+            $database[$requestData['id']] = $requestData;
         } else {
             return $response
                 ->withHeader('Content-Type', 'application/json')
@@ -39,6 +42,7 @@ class UserController
         }
 
         file_put_contents($this->database, json_encode($database));
+        $response->getBody()->write(json_encode($requestData));
         return $response
             ->withHeader('Content-Type', 'application/json')
             ->withStatus(201);
@@ -55,7 +59,7 @@ class UserController
         }
         return $response
             ->withHeader('Content-Type', 'application/json')
-            ->withStatus(201);
+            ->withStatus(200);
     }
 
     public function cleanDatabase(Request $request, Response $response): Response
@@ -70,7 +74,7 @@ class UserController
         }
         return $response
             ->withHeader('Content-Type', 'application/json')
-            ->withStatus(201);
+            ->withStatus(200);
     }
 
     protected function getDatabase(): array
