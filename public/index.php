@@ -2,7 +2,6 @@
 
 use Api\Route;
 use Slim\Factory\AppFactory;
-use Slim\Psr7\Factory\ServerRequestFactory;
 
 require __DIR__ . '/../vendor/autoload.php';
 

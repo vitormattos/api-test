@@ -58,6 +58,21 @@ class UserController
             ->withStatus(201);
     }
 
+    public function cleanDatabase(Request $request, Response $response): Response
+    {
+        if (file_exists($this->database)) {
+            if (!is_writable($this->database)) {
+                return $response
+                    ->withHeader('Content-Type', 'application/json')
+                    ->withStatus(403);
+            }
+            unlink($this->database);
+        }
+        return $response
+            ->withHeader('Content-Type', 'application/json')
+            ->withStatus(201);
+    }
+
     protected function getDatabase(): array
     {
         if (file_exists($this->database)) {

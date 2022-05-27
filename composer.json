@@ -14,7 +14,8 @@
         "phpstan/phpstan": "^1.6",
         "phpunit/phpunit": "^9.5",
         "behat/behat": "^3.10",
-        "libresign/behat-builtin-extension": "^0.4.1"
+        "libresign/behat-builtin-extension": "^0.4.1",
+        "guzzlehttp/guzzle": "^7.4"
     },
     "scripts" : {
         "phpcs" : "phpcs",
