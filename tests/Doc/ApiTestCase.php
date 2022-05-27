@@ -12,6 +12,9 @@ class ApiTestCase extends ApiToolsApiTestCase {
     {
         parent::setUp();
         $data = Yaml::parse(file_get_contents('doc/User.yaml'));
+        if (getenv('API_PORT')) {
+            $data['servers'][0]['url'] = 'http://localhost:'.getenv('API_PORT') . '/api';
+        }
         $schema = OpenApiSchema::getInstance($data);
         $this->setSchema($schema);
 
