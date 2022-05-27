@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84cd9cb18d63c26f2fd3cc2ed6618ebc",
+    "content-hash": "c40dc19b9b4428929f30e8f2e09346bd",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -2084,16 +2084,16 @@
         },
         {
             "name": "libresign/behat-builtin-extension",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LibreSign/behat-builtin-extension.git",
-                "reference": "188f57ef38e3e5b42db8c47512db3a7f6cddf4e7"
+                "reference": "8148a16e1a7c4f6dd164d60feaffd57e811e0510"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LibreSign/behat-builtin-extension/zipball/188f57ef38e3e5b42db8c47512db3a7f6cddf4e7",
-                "reference": "188f57ef38e3e5b42db8c47512db3a7f6cddf4e7",
+                "url": "https://api.github.com/repos/LibreSign/behat-builtin-extension/zipball/8148a16e1a7c4f6dd164d60feaffd57e811e0510",
+                "reference": "8148a16e1a7c4f6dd164d60feaffd57e811e0510",
                 "shasum": ""
             },
             "require": {
@@ -2124,9 +2124,9 @@
             "description": "Behat extension to run php built-in web server",
             "support": {
                 "issues": "https://github.com/LibreSign/behat-builtin-extension/issues",
-                "source": "https://github.com/LibreSign/behat-builtin-extension/tree/v0.4.1"
+                "source": "https://github.com/LibreSign/behat-builtin-extension/tree/v0.4.2"
             },
-            "time": "2022-05-27T15:03:11+00:00"
+            "time": "2022-05-27T18:41:57+00:00"
         },
         {
             "name": "myclabs/deep-copy",
