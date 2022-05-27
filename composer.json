@@ -1,8 +1,7 @@
 {
     "require": {
         "slim/slim": "^4.10",
-        "slim/psr7": "^1.5",
-        "libresign/behat-builtin-extension": "^0.3.0"
+        "slim/psr7": "^1.5"
     },
     "autoload": {
         "psr-4": {
@@ -14,7 +13,8 @@
         "vimeo/psalm": "^4.23",
         "phpstan/phpstan": "^1.6",
         "phpunit/phpunit": "^9.5",
-        "behat/behat": "^3.10"
+        "behat/behat": "^3.10",
+        "libresign/behat-builtin-extension": "^0.4.1"
     },
     "scripts" : {
         "phpcs" : "phpcs",
