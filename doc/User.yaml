@@ -1,0 +1,92 @@
+openapi: 3.1.0
+x-stoplight:
+  id: cokbcoqpvkhzm
+info:
+  title: User
+  version: '1.0'
+  summary: CRUD API with JSON file
+  description: CRUD API to handle JSON file and store user properties
+  contact:
+    name: Vitor Mattos
+    url: 'https://github.com/vitormattos'
+servers:
+  - description: local
+    url: 'http://localhost/api'
+paths:
+  '/user/{userId}':
+    parameters:
+      - schema:
+          type: integer
+        name: userId
+        in: path
+        required: true
+        description: Id of an existing user.
+    delete:
+      summary: Delete user by ID
+      operationId: delete-users-userId
+      responses:
+        '200':
+          description: OK
+      description: Delete an existing user by ID
+      tags:
+        - crud
+  /user:
+    get:
+      summary: Retrieve all Users
+      tags:
+        - crud
+      responses:
+        '200':
+          description: User Found
+          content:
+            application/json:
+              schema:
+                type: array
+                description: Files associated with account
+                items:
+                  $ref: '#/components/schemas/User'
+        '404':
+          description: Empty database
+      operationId: get-users-userId
+      description: Retrieve all users
+    post:
+      summary: Create New User
+      operationId: post-user
+      responses:
+        '200':
+          description: User Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Missing Required Information
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Post the necessary fields for the API to create a new user.
+      description: Create a new user.
+      tags:
+        - crud
+components:
+  schemas:
+    User:
+      title: User
+      type: object
+      description: ''
+      examples:
+        - id: 142
+          name: Alice
+      properties:
+        id:
+          type: integer
+          description: Unique identifier for the given user.
+        name:
+          type: string
+      required:
+        - id
+        - name
+tags:
+  - name: crud
