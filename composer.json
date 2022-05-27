@@ -22,12 +22,14 @@
         "phpcbf" : "phpcbf",
         "psalm" : "psalm",
         "phpstan" : "phpstan analyse src --level 5",
-        "phpunit": "vendor/bin/phpunit --color tests",
+        "phpunit": "phpunit --color tests",
+        "behat": "behat",
         "test" : [
             "@phpcs",
             "@psalm",
             "@phpstan",
-            "@phpunit"
+            "@phpunit",
+            "@behat"
         ]
     }
 }
