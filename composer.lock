@@ -2153,26 +2153,26 @@
         },
         {
             "name": "libresign/behat-builtin-extension",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LibreSign/behat-builtin-extension.git",
-                "reference": "8148a16e1a7c4f6dd164d60feaffd57e811e0510"
+                "reference": "8a39ad29ccfc41a1d1965a2cc86cefbc9dd79466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LibreSign/behat-builtin-extension/zipball/8148a16e1a7c4f6dd164d60feaffd57e811e0510",
-                "reference": "8148a16e1a7c4f6dd164d60feaffd57e811e0510",
+                "url": "https://api.github.com/repos/LibreSign/behat-builtin-extension/zipball/8a39ad29ccfc41a1d1965a2cc86cefbc9dd79466",
+                "reference": "8a39ad29ccfc41a1d1965a2cc86cefbc9dd79466",
                 "shasum": ""
             },
             "require": {
                 "ext-sockets": "*"
             },
             "require-dev": {
-                "behat/behat": "^3.10",
-                "friendsofphp/php-cs-fixer": "^3.6",
+                "bamarni/composer-bin-plugin": "^1.8",
+                "behat/behat": "^3.12",
                 "phpunit/phpunit": "^9.5",
-                "vimeo/psalm": "^4.21"
+                "roave/security-advisories": "dev-latest"
             },
             "type": "library",
             "autoload": {
@@ -2193,9 +2193,9 @@
             "description": "Behat extension to run php built-in web server",
             "support": {
                 "issues": "https://github.com/LibreSign/behat-builtin-extension/issues",
-                "source": "https://github.com/LibreSign/behat-builtin-extension/tree/v0.4.2"
+                "source": "https://github.com/LibreSign/behat-builtin-extension/tree/v0.4.3"
             },
-            "time": "2022-05-27T18:41:57+00:00"
+            "time": "2022-12-31T18:50:31+00:00"
         },
         {
             "name": "myclabs/deep-copy",
