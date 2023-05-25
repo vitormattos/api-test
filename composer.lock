@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d041ed9789282036b6a78c144cd2f826",
+    "content-hash": "152eb1914b7a35842d130c4d74b67439",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -1125,26 +1125,26 @@
         },
         {
             "name": "byjg/swagger-test",
-            "version": "3.1.4",
+            "version": "4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/byjg/php-swagger-test.git",
-                "reference": "57c86fc32d8e71096231c7dc9522f6d8a2117bc4"
+                "reference": "802569297bbcbd6f50a7d4cbe1e8e624a9d43691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/byjg/php-swagger-test/zipball/57c86fc32d8e71096231c7dc9522f6d8a2117bc4",
-                "reference": "57c86fc32d8e71096231c7dc9522f6d8a2117bc4",
+                "url": "https://api.github.com/repos/byjg/php-swagger-test/zipball/802569297bbcbd6f50a7d4cbe1e8e624a9d43691",
+                "reference": "802569297bbcbd6f50a7d4cbe1e8e624a9d43691",
                 "shasum": ""
             },
             "require": {
-                "byjg/webrequest": "^2.0.2",
+                "byjg/webrequest": "4.9.*",
                 "ext-json": "*",
                 "php": ">=5.6"
             },
             "require-dev": {
-                "byjg/restserver": "4.0.*",
-                "phpunit/phpunit": "^5.7|^7.4"
+                "byjg/restserver": "4.9.*",
+                "phpunit/phpunit": "5.7.*|7.4.*|^9.5"
             },
             "type": "library",
             "autoload": {
@@ -1156,31 +1156,25 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "João Gilberto Magalhães",
-                    "email": "joao@byjg.com.br"
-                }
-            ],
             "description": "A set of tools for testing your REST calls based on the Swagger or OpenAPI documentation using PHPUnit",
             "support": {
                 "issues": "https://github.com/byjg/php-swagger-test/issues",
-                "source": "https://github.com/byjg/php-swagger-test/tree/3.1.4"
+                "source": "https://github.com/byjg/php-swagger-test/tree/4.9.0"
             },
-            "time": "2021-10-05T14:09:39+00:00"
+            "time": "2023-05-21T21:04:14+00:00"
         },
         {
             "name": "byjg/uri",
-            "version": "2.1.3",
+            "version": "4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/byjg/uri.git",
-                "reference": "2e5a2e4359c783dca98802f2b2fd61104233ade1"
+                "reference": "c1467fd5ed953c760cb54d2475ce9bc743d73948"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/byjg/uri/zipball/2e5a2e4359c783dca98802f2b2fd61104233ade1",
-                "reference": "2e5a2e4359c783dca98802f2b2fd61104233ade1",
+                "url": "https://api.github.com/repos/byjg/uri/zipball/c1467fd5ed953c760cb54d2475ce9bc743d73948",
+                "reference": "c1467fd5ed953c760cb54d2475ce9bc743d73948",
                 "shasum": ""
             },
             "require": {
@@ -1200,42 +1194,36 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "João Gilberto Magalhães",
-                    "email": "joao@byjg.com.br"
-                }
-            ],
             "description": "An implementation of PSR UriInterface ",
             "support": {
                 "issues": "https://github.com/byjg/uri/issues",
-                "source": "https://github.com/byjg/uri/tree/2.1.3"
+                "source": "https://github.com/byjg/uri/tree/4.9.0"
             },
-            "time": "2022-04-27T20:12:24+00:00"
+            "time": "2022-06-15T13:17:35+00:00"
         },
         {
             "name": "byjg/webrequest",
-            "version": "2.0.3",
+            "version": "4.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/byjg/webrequest.git",
-                "reference": "0d803dd8deaf879cda1e19d6ab603c5167bef742"
+                "reference": "7a600a320f41a307294e856b20da78febd933ef7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/byjg/webrequest/zipball/0d803dd8deaf879cda1e19d6ab603c5167bef742",
-                "reference": "0d803dd8deaf879cda1e19d6ab603c5167bef742",
+                "url": "https://api.github.com/repos/byjg/webrequest/zipball/7a600a320f41a307294e856b20da78febd933ef7",
+                "reference": "7a600a320f41a307294e856b20da78febd933ef7",
                 "shasum": ""
             },
             "require": {
-                "byjg/uri": "2.1.*",
+                "byjg/uri": "4.9.*",
                 "ext-curl": "*",
                 "ext-json": "*",
-                "php": ">=5.5",
+                "php": ">=7.3",
                 "psr/http-message": "1.0.*"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.7.*|7.4.*"
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
@@ -1247,18 +1235,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "João Gilberto Magalhães",
-                    "email": "joao@byjg.com.br"
-                }
-            ],
             "description": "A lightweight and highly customized CURL wrapper for making RESt calls and a wrapper for call dynamically SOAP requests.",
             "support": {
                 "issues": "https://github.com/byjg/webrequest/issues",
-                "source": "https://github.com/byjg/webrequest/tree/2.0.3"
+                "source": "https://github.com/byjg/webrequest/tree/4.9.0"
             },
-            "time": "2021-10-31T04:43:10+00:00"
+            "time": "2023-05-21T20:42:34+00:00"
         },
         {
             "name": "composer/pcre",
