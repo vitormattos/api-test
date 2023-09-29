@@ -1,4 +1,4 @@
-FROM php:8.1-fpm
+FROM php:8.2-fpm
 ARG host_uid=1000
 ARG host_gid=1000
 
@@ -7,9 +7,13 @@ RUN apt-get update
 RUN apt-get install -y \
         unzip
 
-# Install xdebug
-RUN pecl install xdebug-3.1.4 \
-    && docker-php-ext-enable xdebug
+# Install PHP extensions
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+RUN chmod uga+x /usr/local/bin/install-php-extensions \
+    && install-php-extensions \
+      sockets \
+      xdebug \
+    && rm /usr/local/bin/install-php-extensions
 
 RUN usermod --non-unique --uid ${host_uid} www-data \
   && groupmod --non-unique --gid ${host_gid} www-data
