@@ -1,10 +1,7 @@
-openapi: 3.1.0
-x-stoplight:
-  id: cokbcoqpvkhzm
+openapi: '3.0.2'
 info:
   title: User
   version: '1.0'
-  summary: CRUD API with JSON file
   description: CRUD API to handle JSON file and store user properties
   contact:
     name: Vitor Mattos
@@ -76,9 +73,6 @@ components:
       title: User
       type: object
       description: ''
-      examples:
-        - id: 142
-          name: Alice
       properties:
         id:
           type: integer
