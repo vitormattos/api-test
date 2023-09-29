@@ -5,7 +5,8 @@ ARG host_gid=1000
 RUN apt-get update
 
 RUN apt-get install -y \
-        unzip
+      procps \
+      unzip
 
 # Install PHP extensions
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
