@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "846e08d6a60641bf17dcaa9a9c66fc03",
+    "content-hash": "0da9c115e6c6cf57a789cb3bf479a4de",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -1129,16 +1129,16 @@
         },
         {
             "name": "byjg/swagger-test",
-            "version": "4.9.0",
+            "version": "dev-bugfix/remove-deprecated-var-usage",
             "source": {
                 "type": "git",
-                "url": "https://github.com/byjg/php-swagger-test.git",
-                "reference": "802569297bbcbd6f50a7d4cbe1e8e624a9d43691"
+                "url": "https://github.com/vitormattos/php-swagger-test.git",
+                "reference": "6eff8eb004125288f49f36123b1336969ce695a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/byjg/php-swagger-test/zipball/802569297bbcbd6f50a7d4cbe1e8e624a9d43691",
-                "reference": "802569297bbcbd6f50a7d4cbe1e8e624a9d43691",
+                "url": "https://api.github.com/repos/vitormattos/php-swagger-test/zipball/6eff8eb004125288f49f36123b1336969ce695a2",
+                "reference": "6eff8eb004125288f49f36123b1336969ce695a2",
                 "shasum": ""
             },
             "require": {
@@ -1156,16 +1156,19 @@
                     "ByJG\\ApiTools\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Test\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
             "description": "A set of tools for testing your REST calls based on the Swagger or OpenAPI documentation using PHPUnit",
             "support": {
-                "issues": "https://github.com/byjg/php-swagger-test/issues",
-                "source": "https://github.com/byjg/php-swagger-test/tree/4.9.0"
+                "source": "https://github.com/vitormattos/php-swagger-test/tree/bugfix/remove-deprecated-var-usage"
             },
-            "time": "2023-05-21T21:04:14+00:00"
+            "time": "2023-09-29T17:35:36+00:00"
         },
         {
             "name": "byjg/uri",
@@ -5871,7 +5874,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "byjg/swagger-test": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

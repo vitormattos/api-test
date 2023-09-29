@@ -17,7 +17,7 @@
         "behat/behat": "^3.10",
         "libresign/behat-builtin-extension": "^0.5.1",
         "guzzlehttp/guzzle": "^7.4",
-        "byjg/swagger-test": "^4.9"
+        "byjg/swagger-test": "dev-bugfix/remove-deprecated-var-usage"
     },
     "scripts" : {
         "phpcs" : "phpcs",
@@ -33,5 +33,11 @@
             "@phpunit",
             "@behat"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vitormattos/php-swagger-test/"
+        }
+    ]
 }
