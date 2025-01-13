@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0da9c115e6c6cf57a789cb3bf479a4de",
+    "content-hash": "0c2c494f78172e5eb582dd284997e7f9",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -2099,16 +2099,16 @@
         },
         {
             "name": "libresign/behat-builtin-extension",
-            "version": "v0.5.3",
+            "version": "v0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LibreSign/behat-builtin-extension.git",
-                "reference": "50354dacade1218b457aaa24d070c60cac06ff6e"
+                "reference": "d9ddb309bbf36826f47318ca74d67c9e6c5714f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LibreSign/behat-builtin-extension/zipball/50354dacade1218b457aaa24d070c60cac06ff6e",
-                "reference": "50354dacade1218b457aaa24d070c60cac06ff6e",
+                "url": "https://api.github.com/repos/LibreSign/behat-builtin-extension/zipball/d9ddb309bbf36826f47318ca74d67c9e6c5714f9",
+                "reference": "d9ddb309bbf36826f47318ca74d67c9e6c5714f9",
                 "shasum": ""
             },
             "require": {
@@ -2116,8 +2116,8 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8",
-                "behat/behat": "^3.12",
-                "phpunit/phpunit": "^9.5",
+                "behat/behat": "^3.15",
+                "phpunit/phpunit": "^10.5",
                 "roave/security-advisories": "dev-latest"
             },
             "type": "library",
@@ -2139,9 +2139,9 @@
             "description": "Behat extension to run php built-in web server",
             "support": {
                 "issues": "https://github.com/LibreSign/behat-builtin-extension/issues",
-                "source": "https://github.com/LibreSign/behat-builtin-extension/tree/v0.5.3"
+                "source": "https://github.com/LibreSign/behat-builtin-extension/tree/v0.6.3"
             },
-            "time": "2023-06-18T21:14:30+00:00"
+            "time": "2024-10-31T18:50:11+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5881,5 +5881,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
